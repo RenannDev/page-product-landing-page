@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
+#nav-bar {
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+@media (max-width: 700px) {
+  div {
+    background-color: blue;
+  }
+}/*# sourceMappingURL=styles.css.map */

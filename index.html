@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <header id="header">
-        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo-tipo-original-trombones">
+        <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo-tipo-original-trombones">
 
         <nav id="nav-bar">
             <ul>
-                <li class="nav-link" ><a href="">Features</a></li>
-                <li class="nav-link" ><a href="">How It Works</a></li>
-                <li class="nav-link" ><a href="">Pricing</a></li>
+                <li><a class="nav-link" href="#features">features</a></li>
+                <li><a class="nav-link" href="#how_it_works">how it works</a></li>
+                <li><a class="nav-link" href="#pricing">pricing</a></li>
             </ul>
         </nav>
     </header>
 
     <section> 
         <header>Handcrafted, home-made masterpieces</header>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
         <label for="email">
-            <input id="email" type="email" placeholder="Enter your email address">
+            <input id="email" type="email" placeholder="Enter your email address" name="email">
         </label>
-        <label for="">
-            <input type="submit" value="get started">
+        <label for="submit ">
+            <input id="submit" type="submit" value="get started" name="submit"> 
         </label>
+        </form>
     </section>
 
     <main>
-        <section class="qualidade-produtos">
+        <section id="features" class="qualidade-produtos">
             <div class="grid">
                 <svg class="svg" width="196px" height="196px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000" stroke-width="0.00024000000000000003" transform="matrix(-1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.144"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C16.4183 21 20 17.6439 20 13.504C20 9.76257 17.9654 6.83811 16.562 5.44436C16.3017 5.18584 15.8683 5.30006 15.7212 5.63288C14.9742 7.3229 13.4178 9.75607 11.4286 9.75607C10.1975 9.92086 8.31688 8.86844 9.83483 3.64868C9.97151 3.17868 9.46972 2.80113 9.08645 3.11539C6.9046 4.90436 4 8.51143 4 13.504C4 17.6439 7.58172 21 12 21Z" fill="#ffae00"></path> </g></svg>
 
-                <h2>Premium Materials</h2>
+                <h2>Premium Mateials</h2>
                 <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
 
             </div>
@@ -52,11 +55,11 @@
             </div>
         </section>
 
-        <section id="video">
-            <iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0"></iframe>
+        <section id="how_it_works">
+            <iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0"></iframe>
         </section>
 
-        <section class="ofertas">
+        <section id="pricing" class="ofertas">
             <div>
                 <span></span>
                 <h3></h3>
@@ -78,8 +81,8 @@
         </section>
     </main>
 
-    <footer>
-        
+    <footer id="footer">
+        &copy; 
     </footer>
 </body>
 </html>
